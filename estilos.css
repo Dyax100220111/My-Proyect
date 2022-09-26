@@ -1,0 +1,35 @@
+
+body {
+    background-color: antiquewhite;
+    background-image: url(./Imagenes/download\ \(6\).jpg);
+    background-repeat: no-repeat;
+    background-position: right x;
+    background-attachment: scroll;
+    
+}
+
+p {
+    color: blueviolet;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.contenedor {
+    width:100%;
+    max-width:1000px;
+    margin:0 auto;
+    overflow:hidden;
+}
+
+.main {
+    width: 700px;
+    background: antiquewhite;
+    padding: 20px;
+    float: left;
+    box-sizing: border-box;
+
+}

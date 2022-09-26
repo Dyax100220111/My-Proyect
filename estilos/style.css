@@ -1,0 +1,249 @@
+body{
+    font-family: 'Open Sans', sans-serif; /* Fuente o tipografia 1 */
+
+    
+    max-width: 900px; /* Ancho maximo */
+    margin: 0 auto; /* margen */
+
+}
+
+nav{
+
+    width: 100%; /* ancho */
+    height: 100px;/* alto */
+    background: rgb(172, 251, 206); /* color fondo */
+    align-content: center;
+
+}
+
+nav ul li {
+
+list-style-type: none;
+display: inline-block;
+transition: 0.8s;
+padding: 20px 12px;
+}
+
+.img-logo{
+vertical-align: -40px;
+
+}
+
+
+nav ul li {
+
+    padding: 20px;
+    }
+    
+
+nav ul li:hover{/* cuando este sobre este elemnto suceda algo */
+    background: rgb(81, 183, 255); /* color sombreado barra navegacion */
+}
+
+.img-logo{
+    width: 80px;
+    padding: 10px;
+
+}
+
+nav ul li{
+
+    padding-top: 5px; /* relleno superior */
+    display: inline-flex;
+}
+nav ul li a{
+    text-decoration: none; /* decoracion de texto ninguno */
+    color: black;/* color de letra negro */
+}
+
+
+
+h2, ul{
+
+    margin: 0;
+}
+
+img{
+
+    max-width: 100%;
+}
+
+/* ESTILOS SECCIONES */
+
+.seccion1{
+background-color:coral;
+}
+
+.video1{
+    width: 45%;
+    padding: 15px;
+
+}
+
+.texto{
+    width: 40%;
+    padding: 15px;
+    vertical-align: 100px;
+
+}
+
+article{
+    padding: 80px;
+    
+} 
+
+article h1{
+
+padding: 5px;
+}
+
+.texto, .video1{
+    display: inline-block;
+}
+
+.videocart{
+    padding: 20px
+}
+
+
+.seccion1{
+    background: white;
+}
+
+
+
+.seccion1 h1{
+    color: rgb(6, 112, 112);
+    text-align: center;
+}
+
+
+
+
+.seccion2{
+    background: rgb(139, 192, 246); /* color fondo*/
+    padding: 15px;
+
+
+}
+
+
+.seccion2 h1{
+    color: rgb(6, 112, 112);
+    text-align: center;
+}
+
+
+
+.seccion3{
+    background: white;
+}
+
+
+.seccion3 h1{
+    color: rgb(6, 112, 112);
+    text-align: center;
+}
+
+
+.cont-art{
+    width: 100%;
+    vertical-align: top;
+    text-align: center;
+}
+
+footer{
+    width: 100%;
+    height: 200px;
+    background-color:  rgb(39, 168, 173);
+    background-position: center;
+    color: black;    
+    font-weight: bold;
+    line-height: 30px;
+    text-align: center;
+    padding: 45px;
+}
+
+footer div a{
+    text-decoration: none;
+    color: rgb(23, 92, 94);
+    background-position: center;
+}
+
+footer div a:hover{
+    background: black;
+}
+
+.seccion4
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content-all{
+    width: 210px;
+    margin: auto;
+    perspective: 800px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.content-carrousel{
+    width: 100%;
+    position: absolute;
+    animation: rotar 10s infinite linear;
+    transform-style: preserve-3d;
+}
+
+.content-carrousel:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+
+.content-carrousel figure{
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px black;
+    transition: all 300ms;
+    
+}
+
+.content-carrousel figure:hover{
+    box-shadow: 0px 0px 0px 0px black;
+    transition: all 300ms;
+}
+
+.content-carrousel figure:nth-child(1){transform: rotateY(0deg) translateZ(300px);}
+.content-carrousel figure:nth-child(2){transform: rotateY(40deg) translateZ(300px);}
+.content-carrousel figure:nth-child(3){transform: rotateY(80deg) translateZ(300px);}
+.content-carrousel figure:nth-child(4){transform: rotateY(120deg) translateZ(300px);}
+.content-carrousel figure:nth-child(5){transform: rotateY(160deg) translateZ(300px);}
+.content-carrousel figure:nth-child(6){transform: rotateY(200deg) translateZ(300px);}
+.content-carrousel figure:nth-child(7){transform: rotateY(240deg) translateZ(300px);}
+.content-carrousel figure:nth-child(8){transform: rotateY(280deg) translateZ(300px);}
+.content-carrousel figure:nth-child(9){transform: rotateY(320deg) translateZ(300px);}
+.content-carrousel figure:nth-child(10){transform: rotateY(360deg) translateZ(300px);}
+
+.content-carrousel img{
+    width: 100%;
+    transition: all 300ms;
+}
+
+.content-carrousel img:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+
+
+@keyframes rotar{
+    from{
+        transform: rotateY(0deg);
+    }to{
+        transform: rotateY(360deg);
+    }
+}
